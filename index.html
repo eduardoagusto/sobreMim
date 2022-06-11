@@ -1,63 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Qahiri&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Qahiri&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body flag="dark">
+
+    <!-- Barra de navegação -->
     <nav id="nav">
-        <button id="btn-mobile" aria-expanded="active">Menu
-            <span id="hamburger"></span>
-        </button>
-        <ul id="menu">
-            <li><a class="menu-a" href="#sobre">>Sobre Mim</a></li>
-            <li><a class="menu-a" href="#projects">>Projetos</a></li>
-            <li><a class="menu-a" href="https://github.com/eduardoagusto" target="_blank" rel="noopener noreferrer">>GitHub</a></li>
-        </ul>
+      <button id="btn-mobile" aria-expanded="active">
+        Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu">
+        <li><a href="#sobre" alt="Sobre mim">(B:)Sobre Mim</a></li>
+        <li><a href="#projects">(C:)Projetos</a></li>
+        <li>
+          <a
+            href="https://github.com/eduardoagusto"
+            target="_blank"
+            rel="noopener noreferrer"
+            >$GitHub
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/eduardo-augusto-gomes-6a5a491b6/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >%Linkedin
+          </a>
+        </li>
+        <div class="buttons">
+          <button onclick="theme(this)" class="btn-size" flag="dark">
+            Color
+          </button>
+          <button class="btn-size" onclick="FontSize('increase')" accesskey='1'>+A</button>
+          <button class="btn-size" onclick="FontSize('decrease')" accesskey='2'>-A</button>
+        </div>
+      </ul>
     </nav>
-            <header id="sobre">
-                <div class="image">
-                <img class="profile" src="./img/onMatrix.png" alt="">
-                </div>
-                <h1 class="typing-animation">>Eduardo Augusto Gomes de Oliveira Prado</h1>
-                <h2>>Desenvolvedor Front-End</h2>
-            </header>
-            <main>
-                <section class="section-sobre">
-                    <h3>>Sobre mim</h3>
-                    <p>Sempre tive contato e paixão pela área de tecnologia. No ano de 2021 ingressei no curso de Sistemas para Internet, aprendendo desde a lógica de programação, design, até interface humano-computador. Aptidão para desenvolvimento web, sempre estudando novas tecnologias, lingaguens e metodologias.<br><br><br>
-                    Estudos complementares nas áreas de UI/UX, JavaScript, Phyton, JAVA, SEO(Search Engine Optimization) e Acessibilidade;<br><br><br>
-                    Facilidade para trabalhos em equipe;<br>
-                    Disponibilidade e boa comunicação.</p>
-                </section>
-                <section class="section-projects" id="projects">
-                    <div class="title-projects">
-                    <h4>>Projetos</h4>
-                    </div>
-                    <div class="all-box">
-                        <div class="first-box">
-                            <div>
-                                <div class="box"><a href="https://eduardoagusto.github.io/mp3_Player_Js_Css_Html/" target="_blank" rel="noopener noreferrer"><img class="box-img" src="img/mp3.png" alt=""></a></div>
-                                <p class="text-box text-box">.mp3 player</p>
-                            </div>
-                            <div>
-                                <div class="box"><a href="https://eduardoagusto.github.io/slideShow_JS_HTML_CSS/" target="_blank" rel="noopener noreferrer"><img class="box-img" src="img/slide.png" alt=""></a></div>
-                                <p class="text-box text-box">Akatsuki slideshow</p>
-                            </div>
-                            <div>
-                                <div class="box"><a href="https://eduardoagusto.github.io/calculator_JS_HTML_CSS/" target="_blank" rel="noopener noreferrer"><img class="box-img" src="img/calculator.png" alt=""></a></div>
-                                <p class="text-box text-box">Calculator</p>
-                            </div>
-                        </div> 
-                    </div> 
-                </section>
-            </main>
-    <script src="index.js"></script>
-</body>
+    <!-- Barra de navegação -->
+    <div class="icon">
+      <pre>
+ .----------------.  .----------------.  .----------------.
+| .--------------.| | .--------------.| | .--------------.|
+| | ____    ____ || | |   ______     || | | _____  _____ ||
+| ||_   \  /   _||| | |  |_   __ \   || | ||_   _||_   _|||
+| |  |   \/   |  || | |    | |__) |  || | |  | | /\ | |  ||
+| |  | |\  /| |  || | |    |  ___/   || | |  | |/  \| |  ||
+| | _| |_\/_| |_ || | |   _| |_      || | |  |   /\   |  ||
+| ||_____||_____||| | |  |_____|     || | |  |__/  \__|  ||
+| |              || | |              || | |              ||
+| '--------------'| | '--------------'| | '--------------'|
+ '----------------'  '----------------'  '----------------'
+
+************************************************************
+|                         WELCOME !                         |
+|-----------------------------------------------------------|
+|                                                           |
+|                    My personal website                    |
+|        Copyright (c) 2022 Eduardo Augusto G O Prado       |
+|                    All Rights Reserved                    |
+|                                                           |
+|                       Realease V1.1                       |
+|                                                           |
+************************************************************
+      </pre>
+    </div>
+    <!-- Seção Sobre mim -->
+    <header class="grid-sobre" id="sobre">
+      <div class="profile-img">
+        <img src="./img/onMatrix2.png" alt="Foto do Autor do Site" id="image" />
+      </div>
+      <main class="text-block">
+        <div>
+          <h1 class="name" id="h1">>Eduardo Augusto Gomes de Oliveira Prado</h1>
+          <h2 class="sub-title" id="h2">>Desenvolvedor Front-End</h2>
+        </div>
+        <div>
+          <h3 class="title-text" id="h3">(B:)/Sobre Mim</h3>
+          <p class="text" id="text">
+            Sempre tive contato e paixão pela área de tecnologia. No ano de 2021
+            ingressei no curso de Sistemas para Internet, aprendendo desde a
+            lógica de programação, design, até interface humano-computador.
+            Aptidão para desenvolvimento web, sempre estudando novas
+            tecnologias, linguagens e metodologias.
+          </p>
+          <p class="text" id="sub-text">
+            Estudos complementares nas áreas de JavaScript, UI/UX, SEO(Search
+            Engine Optimization) e Acessibilidade; Facilidade para trabalhos em
+            equipe; Disponibilidade e boa comunicação.
+          </p>
+        </div>
+      </main>
+    </header>
+    <!-- Seção Sobre mim -->
+
+    <!-- Seção Projetos -->
+    <section id="projects">
+      <h4 class="title-project" id="h4">(C:)/Projetos</h4>
+      <ul>
+        <li>
+          <a href="https://eduardoagusto.github.io/pokemonAPI/" target="_blank"
+            >(C:)/Projetos> ?$pokedex$~</a
+          >
+        </li>
+        <li>
+          <a href="https://eduardoagusto.github.io/mp3Player/" target="_blank"
+            >(C:)/Projetos> ?$.mp3Player$~</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://eduardoagusto.github.io/myNetflixWebsiteClone/"
+            target="_blank"
+            >(C:)/Projetos> ?$netflix_Clone$~</a
+          >
+        </li>
+        <li>
+          <a href="https://eduardoagusto.github.io/calculator/" target="_blank"
+            >(C:)/Projetos> ?$calculadorar$~</a
+          >
+        </li>
+        <li>
+          <a href="https://eduardoagusto.github.io/slideShow/" target="_blank"
+            >(C:)/Projetos> ?$akatsuki_SlideShow$~</a
+          >
+        </li>
+        <li>...loading</li>
+      </ul>
+
+    </section>
+
+    <!-- Scripts -->
+    <script src="./assets/font-size.js"></script>
+    <script src="./assets/smartphone-menu.js"></script>
+    <script src="./assets/color-change.js"></script>
+
+    <!-- Scripts -->
+
+  </body>
 </html>
