@@ -74,12 +74,12 @@ a {
 /* Seção Sobre mim */
 
 .grid-sobre {
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 1400px;
   padding: 10px;
   margin: 0 auto 5em;
-  overflow: hidden;
 }
 .profile-img {
   display: flex;
@@ -134,9 +134,7 @@ a {
 }
 
 /* Seção de projetos */
-#projects{
-  overflow: hidden;
-}
+
 .title-project {
   font-size: 2.2em;
   width: 8em;
