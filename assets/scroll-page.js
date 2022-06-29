@@ -4,6 +4,7 @@ ScrollReveal({
     duration:2000,
     delay:400,
 });
+ScrollReveal().reveal('.icon',{delay:100,origin:'bottom',distance: '50px',duration:1000})
 ScrollReveal().reveal('.profile-img',{delay:40,origin:'right',distance: '1000px',duration:2000})
 ScrollReveal().reveal('.project-1',{delay:100,origin:'left',distance: '300px',duration:2000})
 ScrollReveal().reveal('.project-2',{delay:200,origin:'left',distance: '300px',duration:2000})
