@@ -50,8 +50,8 @@
       </ul>
     </nav>
     <!-- Barra de navegação -->
-    <div class="icon">
-      <pre>
+    <div>
+      <pre  class="icon">
  .----------------.  .----------------.  .----------------.
 | .--------------.| | .--------------.| | .--------------.|
 | | ____    ____ || | |   ______     || | | _____  _____ ||
@@ -142,9 +142,99 @@
 
     </section>
 
+    <!-- Pokedex -->
+
+    <section class="online-projects">
+
+        <section class="pokedex">
+          <h2 class="pokedex-title">PokeDex</h2>
+          <div class="search-container">
+            <input
+              type="text"
+              class="form-control"
+              id="search_q"
+              placeholder="nome, ou ID"
+            />
+            <button class="btn-search" id="search-btn">
+              click
+            </button>
+          </div>
+          <div class="pokemon-card" id="pokemon_details">
+            <div class="img-container">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+                id="update_img"
+                alt="Imagem de um pokemon"
+              />
+            </div>
+            <div class="detail-container">
+              <div class="title-container">
+                <h3 class="name text-center" id="update_name">pikachu</h3>
+              </div>
+              <div class="attributes-container">
+                <div class="attributes-content">
+                  <p id="update_type">electric</p>
+                  <small class="text-muted">Type</small>
+                </div>
+                <div class="attributes-content">
+                  <p id="update_weight">6kg</p>
+                  <small class="text-muted">Weight</small>
+                </div>
+                <div class="attributes-content">
+                  <p id="update_height">0.4m</p>
+                  <small class="text-muted">Height</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="calculator">
+              <h2 class="title-calc typing-animation">>calculator</h2>
+                <div class="calculadora">
+                  
+                    <p class="textResult typing-result">>Result:</p>
+                    <p id="resultado"></p>
+        
+                    <table>
+                        <tr>
+                            <td><button class="button-calc" onclick="clean('C')"><span>C</span></button></td>
+                            <td><button class="button-calc" onclick="back('<')"><span><</span></button></td>
+                            <td><button class="button-calc" onclick="insert('/')"><span>/</span></button></td>
+                            <td><button class="button-calc" onclick="insert('*')"><span>*</span></button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="button-calc" onclick="insert('7')"><span>7</span></button></td>
+                            <td><button class="button-calc" onclick="insert('8')"><span>8</span></button></td>
+                            <td><button class="button-calc" onclick="insert('9')"><span>9</span></button></td>
+                            <td><button class="button-calc" onclick="insert('-')"><span>-</span></button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="button-calc" onclick="insert('4')"><span>4</span></button></td>
+                            <td><button class="button-calc" onclick="insert('5')"><span>5</span></button></td>
+                            <td><button class="button-calc" onclick="insert('6')"><span>6</span></button></td>
+                            <td><button class="button-calc" onclick="insert('+')"><span>+</span></button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="button-calc" onclick="insert('1')"><span>1</span></button></td>
+                            <td><button class="button-calc" onclick="insert('2')"><span>2</span></button></td>
+                            <td><button class="button-calc" onclick="insert('3')"><span>3</span></button></td>
+                            <td rowspan="2"><button class="button-calc" style="height: 106px;" onclick="calcular()"><span>=</span></button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="button-calc" style="width: 106px;" onclick="insert('0')"><span>0</span></button></td>
+                            <td><button class="button-calc" onclick="insert('.')"><span>.</span></button></td>
+                        </tr>
+                    </table>
+            </div>
+        </section>
+    </section>
+  
     <!-- Scripts -->
-    <script src="./assets/font-size.js"></script>
+    <script src="assets/calculator.js"></script>
+    <script src="assets/podex.js"></script>
     <script src="./assets/smartphone-menu.js"></script>
+    <script src="./assets/font-size.js"></script>
     <script src="./assets/color-change.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/scroll-page.js"></script>

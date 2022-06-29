@@ -14,6 +14,18 @@ body {
   --green: #2dfc52;
 }
 
+/* Reset Page */
+
+/* SOMBRAS
+Sombra texto grande: 
+text-shadow: 0px 0px 6px var(--green),
+ 0px 0px 1px var(--green),
+0px 0px 2px var(--green);
+
+Sobrambra texto pequeno:
+text-shadow: 0px 0px 4px var(--green),
+ 0px 0px 1px var(--green); */
+
 /* Botão mobile */
 
 #btn-mobile {
@@ -30,16 +42,18 @@ body {
   cursor: pointer;
 }
 .btn-size:hover {
-  text-shadow: 0px 0px 7px var(--green), 0px 0px 5px var(--green),
-    0px 0px 10px var(--green);
+  text-shadow: 0px 0px 4px var(--green),
+ 0px 0px 1px var(--green);
 }
 
 /* Barra de navegação */
 nav{
+  z-index: 999;
   position:fixed;
-  width: 100%;
-  backdrop-filter: blur(7px);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.568)rgba(255, 255, 255, 0.226)2),rgba(255, 255, 255, 0.062);
+  width: 100vw;
+  top: 0;
+  backdrop-filter: blur(7px)!important;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.568)rgba(255, 255, 255, 0.226)2),rgba(255, 255, 255, 0.062)!important;
 }
 #menu {
   display: flex;
@@ -51,8 +65,8 @@ li {
   font-size: 1.3em;
 }
 li:hover {
-  text-shadow: 0px 0px 7px var(--green), 0px 0px 5px var(--green),
-    0px 0px 10px var(--green);
+  text-shadow: 0px 0px 4px var(--green),
+ 0px 0px 1px var(--green);;
 }
 a {
   text-decoration: none;
@@ -79,7 +93,8 @@ a {
   grid-template-columns: repeat(2, 1fr);
   max-width: 1400px;
   padding: 10px;
-  margin: 0 auto 5em;
+  margin: 0 auto;
+  padding-top: 5em;
 }
 .profile-img {
   display: flex;
@@ -99,10 +114,8 @@ a {
   font-size: 2em;
   text-align: center;
   cursor: pointer;
-}
-.name:hover {
-  text-shadow: 0px 0px 10px var(--green), 0px 0px 1px var(--green),
-    0px 0px 15px var(--green);
+  text-shadow: 0px 0px 6px var(--green), 0px 0px 1px var(--green),
+  0px 0px 2px var(--green);
 }
 .sub-title {
   margin-top: 0.5em;
@@ -111,41 +124,192 @@ a {
   cursor: pointer;
 }
 .sub-title:hover {
-  text-shadow: 0px 0px 10px var(--green), 0px 0px 1px var(--green),
-    0px 0px 15px var(--green);
+  text-shadow: 0px 0px 4px var(--green), 0px 0px 1px var(--green);
 }
 .title-text {
   font-size: 2.2em;
   width: 9em;
   margin: 3em auto 1em auto;
   cursor: pointer;
+  text-shadow: 0px 0px 6px var(--green),
+ 0px 0px 1px var(--green),
+0px 0px 2px var(--green);
 }
-.title-text:hover {
-  text-shadow: 4px 4px 8px var(--green), 0px 0px 5px var(--green);
-}
+
 .text {
   text-align: center;
   font-size: 1.1em;
   margin-bottom: 0.7em;
 }
 .text:hover {
-  text-shadow: 0px 0px 10px var(--green), 0px 0px 1px var(--green),
-    0px 0px 15px var(--green);
+  text-shadow: 0px 0px 2px var(--green),
+  0px 0px 1px var(--green);;
 }
 
+/* Seção Sobre mim */
 /* Seção de projetos */
-
+#projects{
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
 .title-project {
   font-size: 2.2em;
   width: 8em;
   margin: 2em auto 1em auto;
   cursor: pointer;
   padding: 1em;
-}
-.title-project:hover {
-  text-shadow: 4px 4px 8px var(--green), 0px 0px 5px var(--green);
+  text-shadow: 0px 0px 6px var(--green),
+ 0px 0px 1px var(--green),
+0px 0px 2px var(--green);
 }
 
+/* Seção de projetos */
+/* Secao Pokedex */
+
+.online-projects{
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1400px;
+  padding: 10px;
+  margin: 5em auto 5em;
+  grid-template-areas: 
+  "pokedex calc";
+}
+.pokedex-title{
+  font-size: 2em;
+  text-shadow: 0px 0px 4px var(--green),
+  0px 0px 1px var(--green);
+  padding: 1em;
+}
+.pokedex{
+  grid-area: pokedex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 10px double var(--green);
+  width: 400px;
+  margin: 0 auto;
+}
+.pokedex:hover{
+  box-shadow: 0px 2px 2px var(--green),
+  4px 2px 2px var(--green);
+}
+.search-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em auto 3em;
+}
+.search-container input{
+  width: 15em;
+  background-color: var(--black);
+  border: solid 2px var(--green);
+  height: 2em;
+  padding-left: 10px;
+  margin-right: 1em;
+  color: var(--green);
+}
+.search-container input:focus{
+  box-shadow: 0px 2px 2px var(--green),
+ 4px 2px 2px var(--green);
+  border: solid 2px var(--green);
+  outline: 0;
+}
+.btn-search{
+  width: 5em;
+  height: 2em;
+  background-color: var(--black);
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+.btn-search:hover:focus{
+  box-shadow: 0px 2px 2px var(--green),
+  4px 2px 2px var(--green);
+   border: solid 2px var(--green);
+   outline: 0;
+}
+.pokemon-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.img-container img{
+  width: 12em;
+  filter: invert(100%);
+}
+.attributes-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+  margin:1em auto ;
+}
+.attributes-content{
+  padding: 1em;
+  margin: 1em;
+}
+
+/* Secao Pokedex */
+/* Calculadora */
+.calculator{
+  grid-area: calc;
+  width: 18em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 2px 2px var(--green),
+  4px 2px 2px var(--green);
+  border: 10px double var(--green);
+  margin:5em auto;
+}
+.title-calc{
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 2em;
+  text-shadow: 0px 0px 4px var(--green),
+  0px 0px 1px var(--green);
+}
+.calculadora{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.textResult{
+  cursor: pointer;
+  color: var(--green);
+  margin:0 7.5em 0 1em;
+  font-size: 1.2em;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#resultado{
+  font-size: 1.3em;
+  text-shadow: 2px 2px 3px var(--green);
+  margin: 0 auto;
+  height: 1.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 10em;
+  text-align: end;
+}
+.button-calc{
+  border: none;
+  background-color: var(--black);
+  color: var(--green);
+  font-size: 1.5em;
+  margin: 0.6em;
+}
+.button-calc:hover{
+  text-shadow: 2px 2px 5px var(--green),
+  1px 1px 3px var(--green);
+}
+/* Calculadora */
 /* Responsividade Tablet/Smartphone */
 
 @media (max-width: 1250px) {
@@ -159,8 +323,8 @@ a {
 
   /* Menu Hamburguer */
   .btn-size{
-    text-shadow: 0px 0px 7px var(--green), 0px 0px 5px var(--green),
-    0px 0px 10px var(--green);
+    text-shadow: 0px 0px 4px var(--green),
+ 0px 0px 1px var(--green);;
   }
 
   #btn-mobile {
@@ -219,10 +383,8 @@ a {
     margin-left: 0;
   }
   #nav.active #menu {
-    height: 25em;
+    height: 100vh;
     visibility: visible;
-    /* text-shadow: 0px 0px 7px var(--green), 0px 0px 5px var(--green),
-    0px 0px 10px var(--green); */
   }
 
   /* Formantando imagem e bloco projeto */
@@ -254,6 +416,13 @@ a {
   .title-project {
     font-size: 1.5em;
   }
+
+/* Projetos */
+
+  .online-projects{
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (max-width: 800px) {
   .icon{
@@ -262,4 +431,8 @@ a {
   .profile-img img {
     width: 80%;
   }
+  .pokedex{
+    width: 19.5em;
+  }
 }
+/* Responsividade Tablet/Smartphone */
