@@ -24,28 +24,20 @@ text-shadow: 0px 0px 6px var(--green),
 
 Sobrambra texto pequeno:
 text-shadow: 0px 0px 4px var(--green),
- 0px 0px 1px var(--green); */
+ 0px 0px 1px var(--green);
+ 
+Borda projeto:
+  border: 10px double var(--green);
+  box-shadow: 6px 6px 8px var(--green);
+*/
+
 
 /* Botão mobile */
 
 #btn-mobile {
   display: none;
 }
-
-.btn-size {
-  background: none;
-  color: var(--green);
-  border: none;
-  text-align: center;
-  padding: 1em;
-  font-size: 1.3em;
-  cursor: pointer;
-}
-.btn-size:hover {
-  text-shadow: 0px 0px 4px var(--green),
- 0px 0px 1px var(--green);
-}
-
+/* Botão mobile */
 /* Barra de navegação */
 nav{
   z-index: 999;
@@ -72,14 +64,28 @@ a {
   text-decoration: none;
   color: var(--green);
 }
+.btn-color{
+  color: var(--green);
+  padding: 1em;
+  font-size: 1.3em;
+  text-align: center;
+  background: none;
+  border: none;
+}
+.btn-color:hover{
+  text-shadow: 0px 0px 4px var(--green),
+  0px 0px 1px var(--green);;
+}
 
+/* Barra de navegação */
 /*Icone*/
 
 .icon {
   display:flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
+  margin-top: 10vh;
   flex-direction: column;
   text-shadow: 0px 0px 7px var(--green), 0px 0px 5px var(--green);
 }
@@ -94,7 +100,8 @@ a {
   max-width: 1400px;
   padding: 10px;
   margin: 0 auto;
-  padding-top: 5em;
+  padding-top: 15em;
+  padding-bottom: 10em;
 }
 .profile-img {
   display: flex;
@@ -149,8 +156,8 @@ a {
 /* Seção Sobre mim */
 /* Seção de projetos */
 #projects{
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 10em;
+  padding-bottom: 10em;
 }
 .title-project {
   font-size: 2.2em;
@@ -189,12 +196,9 @@ a {
   justify-content: center;
   flex-direction: column;
   border: 10px double var(--green);
+  box-shadow: 6px 6px 8px var(--green);
   width: 400px;
   margin: 0 auto;
-}
-.pokedex:hover{
-  box-shadow: 0px 2px 2px var(--green),
-  4px 2px 2px var(--green);
 }
 .search-container{
   display: flex;
@@ -261,8 +265,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  box-shadow: 0px 2px 2px var(--green),
-  4px 2px 2px var(--green);
+  box-shadow: 6px 6px 8px var(--green);
   border: 10px double var(--green);
   margin:5em auto;
 }
@@ -322,10 +325,6 @@ a {
   }
 
   /* Menu Hamburguer */
-  .btn-size{
-    text-shadow: 0px 0px 4px var(--green),
- 0px 0px 1px var(--green);;
-  }
 
   #btn-mobile {
     margin-top: 1em;
